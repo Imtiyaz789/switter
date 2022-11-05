@@ -29,7 +29,7 @@ const Card = () => {
                     <div className='row'>
                         <div className='col'>
                             <div className="card m-3 shadow p-3  bg-body rounded" >
-                                <img src={img} key={id} className="card-img-top" alt="..." />
+                                <img src={`https://picsum.photos/200/300/?blur=${id || img}`} key={id} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{data.name}</h5>
                                     <h6 className="card-title">{data.username}</h6>

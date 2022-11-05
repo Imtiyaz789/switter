@@ -25,19 +25,19 @@ const Gallery = () => {
             {data && data.map((data, id) => {
                 return (
                     <>
-                        <div className='row'>
-                            <div className='col' key={id}>
+                        <div className='row' >
+                            <div className='col' >
                                 <div className="card  m-3 shadow p-3  bg-body rounded gallery_card"  >
                                     {/* <img src="." key={id} className="card-img-top" alt="..." /> */}
                                     <div className="card-body">
-                                        <img src={data.thumbnailUrl} key={id} className="card-img-top" alt="..." />
+                                        <img src={`https://picsum.photos/id/${id}/${200}/${200}`} key={id} className="card-img-top" alt="..." />
                                         <h5 className="card-title">{data.title}</h5>
 
                                         {/* <h6 className="card-title">{data.username}</h6> */}
+                                        <Link to={data.url}>Click</Link>
                                     </div>
 
                                     <div className="card-body">
-                                        <Link to={data.url}>Click</Link>
                                         {/* <button ><Link to={`/albums/${data.id}`}>Album</Link></button> */}
                                         {/* <a href="1" className="card-link">Post</a> */}
                                         {/* <a href="1" className="card-link"><Todo id={data.id} /></a> */}
