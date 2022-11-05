@@ -2,8 +2,28 @@
   text-align: center;
 }
 .card{
-  width: 18rem;
+  width: 17rem;
+  height: 22rem;
+  border-radius: 10% !important;
 }
-.btn > link{
+.card-img-top{
+  height: 10rem;
+  border-radius: 10%;
+}
+.btn > a{
   color: white;
+  text-decoration: none;
+}
+
+
+/* album style start here */
+.card-body > a{
+  color: blue;
+  text-decoration: none;
+}
+
+/* gallery style start here */
+.gallery_card{
+  width: 17rem !important;
+  height: 21rem !important;
 }

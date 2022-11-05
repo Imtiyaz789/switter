@@ -28,7 +28,7 @@ const Album = () => {
                     <>
                         <div className='row m-2 d-flex justify-content-evenly' >
                             <div className='col'>
-                                <div className="card" key={id} >
+                                <div className="card m-3 shadow p-3  bg-body rounded" key={id} >
                                     <div className="card-body">
                                         <h5 className="card-title">{data.title}</h5>
                                         {/* <img src={data.url} key={id} className="card-img-top" alt="..." /> */}
@@ -36,8 +36,7 @@ const Album = () => {
                                     </div>
 
                                     <div className="card-body">
-                                        <Link to={`/albums/${data.id}/photos`}>Photos</Link>
-
+                                        <Link to={`/albums/${data.id}/photos`}>See Pics</Link>
                                     </div>
                                 </div>
                             </div>

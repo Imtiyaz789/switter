@@ -29,7 +29,7 @@ const Card = () => {
                     <div className='row'>
                         <div className='col'>
                             <div className="card m-3 shadow p-3  bg-body rounded" >
-                                <img src={img} key={id} className="card-img-top w-100 h-auto" alt="..." />
+                                <img src={img} key={id} className="card-img-top" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{data.name}</h5>
                                     <h6 className="card-title">{data.username}</h6>

@@ -27,16 +27,17 @@ const Gallery = () => {
                     <>
                         <div className='row'>
                             <div className='col' key={id}>
-                                <div className="card"  >
-                                    <img src="." key={id} className="card-img-top" alt="..." />
+                                <div className="card  m-3 shadow p-3  bg-body rounded gallery_card"  >
+                                    {/* <img src="." key={id} className="card-img-top" alt="..." /> */}
                                     <div className="card-body">
-                                        <h5 className="card-title">{data.title}</h5>
                                         <img src={data.thumbnailUrl} key={id} className="card-img-top" alt="..." />
-                                        <Link to={data.url}>Click</Link>
+                                        <h5 className="card-title">{data.title}</h5>
+
                                         {/* <h6 className="card-title">{data.username}</h6> */}
                                     </div>
 
                                     <div className="card-body">
+                                        <Link to={data.url}>Click</Link>
                                         {/* <button ><Link to={`/albums/${data.id}`}>Album</Link></button> */}
                                         {/* <a href="1" className="card-link">Post</a> */}
                                         {/* <a href="1" className="card-link"><Todo id={data.id} /></a> */}
