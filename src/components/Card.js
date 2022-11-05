@@ -6,11 +6,10 @@ import { Link } from 'react-router-dom'
 
 const Card = () => {
     const [data, setData] = useState()
-    const [img, setImg] = useState()
     useEffect(() => {
         fetchApi()
-        link()
-    }, [])
+        // link()
+    }, [data])
     const fetchApi = async () => {
         try {
             const data = await axios('https://jsonplaceholder.typicode.com/users/')
@@ -22,11 +21,6 @@ const Card = () => {
         }
 
     }
-    const link = () => {
-        const image = 1
-        const img = axios(`https://picsum.photos/id/${image}`)
-        setImg(img)
-    }
 
     return (
         <div className='container-fluid d-flex flex-wrap justify-content-evenly p-5'>
@@ -34,8 +28,8 @@ const Card = () => {
                 return (<>
                     <div className='row'>
                         <div className='col'>
-                            <div className="card m-3 shadow p-3 mb-5 bg-body rounded" >
-                                <img src={img} key={id} className="card-img-top" alt="..." />
+                            <div className="card m-3 shadow p-3  bg-body rounded" >
+                                <img src={img} key={id} className="card-img-top w-100 h-auto" alt="..." />
                                 <div className="card-body">
                                     <h5 className="card-title">{data.name}</h5>
                                     <h6 className="card-title">{data.username}</h6>

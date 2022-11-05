@@ -8,6 +8,7 @@ const Album = () => {
     // console.log(id)
     useEffect(() => {
         fetchApi()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     const fetchApi = async () => {
         try {
@@ -21,7 +22,7 @@ const Album = () => {
 
     }
     return (
-        <div className='container-fluid d-flex flex-wrap justify-content-evenly'>
+        <div className='container-fluid d-flex flex-wrap justify-content-evenly p-5'>
             {data && data.map((data, id) => {
                 return (
                     <>

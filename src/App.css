@@ -4,3 +4,6 @@
 .card{
   width: 18rem;
 }
+.btn > link{
+  color: white;
+}
