@@ -35,8 +35,9 @@ const Card = () => {
                                     <h6 className="card-title">{data.username}</h6>
                                 </div>
 
-                                <div className="card-body">
+                                <div className="card-body d-flex justify-content-evenly">
                                     <button className='btn btn-info' ><Link to={`/${data.id}/albums`}>Album</Link></button>
+                                    <button className='btn btn-info' ><Link to={`/${data.id}/todos`}>Todos</Link></button>
                                     {/* <a href="1" className="card-link">Post</a> */}
                                     {/* <a href="1" className="card-link"><Todo id={data.id} /></a> */}
                                     {/* <a href="1" className="card-link">Album</a> */}

@@ -8,6 +8,8 @@ const Gallery = () => {
     const [data, setData] = useState()
     const [isZoom, setIsZoom] = useState(false)
     const { id } = useParams()
+
+
     // console.log(id)
     useEffect(() => {
         fetchApi()
